@@ -14,7 +14,7 @@ Despite structural similarities using composition, their intents differ vastly. 
 **Why not Template Method:**
 Template Method relies heavily on inheritance. It defines a rigid algorithm skeleton within an abstract base class, forcing subclasses to override only specific steps. Here, the calculation algorithms differ fundamentally from each other completely rather than just in intermediate steps. Using Template Method would create tight coupling through static inheritance. Choosing Strategy leverages object composition at the interface level, allowing full implementation swapping on the fly.
 
-## 3. Refactoring with Git history
+## Refactoring with Git history
 
 *   **Before (Bad implementation with switch/if-else):** 6316217410540927e25b13510a44433d367731e8
 *   **After (Clean implementation using Strategy):** 606e900c0ab9df4aa251aca80e84f047034eacd2
